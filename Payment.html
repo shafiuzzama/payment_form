@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment details</title>
+    <link rel="stylesheet" href="Payment.css">
+</head>
+<body>
+    <div class="product-delivery">
+        <div class="nav">
+            <h1>Diatoz & E2E Hiring</h1>
+        </div>
+        <div class="shipping-details">
+            <h1 class="Checkout">Payment details</h1>
+            <div class="address_details">
+                <div class="circle" id="c1">
+
+                    1
+                </div>
+                <h4>Shipping address</h4>
+                <div class="circle " id="c2">
+                    2
+
+                </div>
+                <h4>Payment details</h4>
+                <div class="circle">
+                    3
+
+                </div>
+                <h4>Review your order</h4>
+            </div>
+            <div class="user_input">
+                <h3>Payment method
+ 
+                </h3>
+                <div class="form__group">
+                    <div style="display: flex; column-gap: 20px; justify-content: space-between; " >
+                        <div>
+                            <input type="email"  class="form__field" placeholder="Email" id="name">
+                            <label for="email" class="form__label">Name on Card</label>
+
+                        </div>
+                        <div>
+                            <input type="email"  class="form__field" placeholder="Email" id="crad_number">
+                            <label for="email" class="form__label">Card Number</label>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+                 
+                  <div class="form__group">
+                    <div style="display: flex; column-gap: 20px; justify-content: space-between; " >
+                        <div>
+                            <input type="email" class="form__field" placeholder="Email" id="Expiry_date">
+                            <label for="email" class="form__label">Expiry date</label>
+
+                        </div>
+                        <div>
+                            <input type="email"  class="form__field" placeholder="Email" id="cvv">
+                            <label for="email" class="form__label">CVV</label>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="form__group">
+                    <div style="display: flex; column-gap: 20px; justify-content: space-between; " >
+                       
+                    </div>
+                    
+
+                </div>
+                <div>
+                <input type="checkbox" class="chackBox">Remember credit card details for next time
+            </div>
+           
+            <div class="button-container">
+                <button class="Backbtn" style=" background-color: #3498db;">
+                    <a href="./index.html">Back</a>
+                </button>
+                <button class="btn" onclick="validateForm()">Next
+                    <!-- <a href="./Review.html">Next</a> -->
+                </button>
+            </div>
+            
+            
+        
+            </div>
+           
+        </div>
+
+
+        <script>
+            function validateForm() {
+               
+                var name = document.getElementById("name").value.trim();
+                var cardNumber = document.getElementById("crad_number").value.trim();
+                var expiryDate = document.getElementById("Expiry_date").value.trim();
+                var cvv = document.getElementById("cvv").value.trim();
+        
+                
+                var cardNumberRegex = /^\d{16}$/;
+                var cvvRegex = /^\d{3}$/;
+                var expiryDateRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+        
+               
+                if (name === "" || cardNumber === "" || expiryDate === "" || cvv === "") {
+                    alert("Please fill in all the payment details before proceeding to the next page.");
+                } else if (!cardNumberRegex.test(cardNumber) || !cvvRegex.test(cvv) || !expiryDateRegex.test(expiryDate)) {
+                    
+                    alert("Please enter valid payment details. Check the formats for card number, expiry date, and CVV.");
+                } else {
+                   
+                    window.location.href = "./Review.html";
+                }
+            }
+        </script>
+        
+</body>
+</html>

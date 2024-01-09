@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.nav h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+    margin: 0;
+}
+.nav{
+    /* background-color: #222;
+    color:wheat;
+    padding: 15px; */
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+}
+.shipping-details{
+    /* border: 1px solid black; */
+    height: 500px;
+    width: 600px;
+    margin: auto;
+    margin-top: 95px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    
+   
+   
+}
+.Checkout{
+    text-align: center;
+    margin: 30px;
+}
+.circle{
+    /* height: 25px;
+    
+    width: 25px;
+    border-radius: 100%;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 5px; */
+
+  height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    /* background: linear-gradient(45deg, #3498db, #2980b9); */
+    background-color: grey;
+    font-size: 1.2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+ 
+}
+.address_details{
+    display: flex;
+   justify-content: space-evenly;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 15px;
+ 
+}
+
+.form__field {
+  font-family: inherit;
+ 
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  outline: 0;
+  font-size: 16px;
+  color: #212121;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 14px;
+  cursor: text;
+  top: 20px;
+}
+
+label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.form__field:focus ~ .form__label {
+  color: #009788;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #009788;
+}
+/* .user_input{
+ display: flex;
+ justify-content: space-between;
+
+} */
+.user_input{
+    padding: 30px;
+    margin: 20px;
+    
+
+}
+.chackBox{
+    padding: 20px;
+    margin-top: 40px;
+ margin-right: 10px;
+}
+
+#c2{
+    /* background-color: blue; */
+    background: linear-gradient(45deg, #3498db, #2980b9);
+   
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 20px;
+    margin-left: 70%; /* Adjust margin as needed */
+}
+
+.Backbtn {
+    /* background-color: #ccc;  */
+    color: blue; /* Adjust the color as needed */
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px; /* Adjust margin as needed */
+    outline: none;
+}
+
+.btn {
+    background-color: blue;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+#c1{
+    /* background-color: blue !important; */
+    background: linear-gradient(45deg, #3498db, #2980b9);
+}
+a{
+    text-decoration: none;
+}
+
+
+/* ... Your existing styles ... */
+
+/* Media query for mobile and tablet screens */
+@media screen and (max-width: 768px) {
+    .shipping-details {
+        /* Adjustments for smaller screens */
+        width: 90%;
+        height: 100%;
+        margin: 20px auto;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .nav {
+        background-color: #333;
+        color: white;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .Checkout {
+        margin: 30px 0;
+        text-align: center;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .circle {
+        /* background-color: #3498db; */
+        background-color: grey;
+    }
+
+    .address_details {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .user_input {
+        padding: 15px;
+        margin: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+    }
+
+    .form__field {
+        font-size: 16px;
+    }
+
+    .form__label {
+        font-size: 14px;
+    }
+
+    .chackBox {
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center buttons horizontally */
+        margin-top: 20px;
+    }
+
+    
+
+    /* Add more styles as needed for other elements on smaller screens */
+}
+
+
+@media screen and (max-width: 768px) {
+    /* ... Other styles ... */
+
+    /* .button-container {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        margin-top: 20px;
+        
+    }
+
+    .Backbtn,
+    .btn {
+        background-color: #3498db;
+       
+        color: white;
+        border-radius: 10px;
+        
+        width: 75%; 
+        max-width: 150px;
+        text-align: center;
+        cursor: pointer;
+        margin-bottom: 0; 
+    }
+
+     */
+     .button-container {
+        flex-direction: row;
+        justify-content: center; /* Center the buttons horizontally */
+        margin-top: 15px;
+    }
+}
+
+
+
+a{
+    color: white;
+   
+}
+.user_input {
+    padding: 15px;
+    margin: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+

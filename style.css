@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.nav h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    padding-top: 70px;
+    margin: 0;
+    
+}
+.nav{
+    /* background-color: #222;
+    color:wheat;
+    padding: 15px; */
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    overflow-x: hidden;
+    
+}
+.shipping-details{
+    /* border: 1px solid black; */
+    height: 630px;
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    
+
+    
+   
+   
+}
+.Checkout{
+    text-align: center;
+    margin: 30px;
+}
+.circle:hover {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+}
+
+.circle{
+    /* height: 25px;
+    
+    width: 25px;
+    border-radius: 100%;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  padding: 5px; */
+
+  height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    /* background: linear-gradient(45deg, #3498db, #2980b9); */
+    font-size: 1.2em;
+    background-color: grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+ 
+}
+.address_details{
+    display: flex;
+   justify-content: space-evenly;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 15px;
+ 
+}
+
+.form__field {
+  font-family: inherit;
+ 
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #d2d2d2;
+  outline: 0;
+  font-size: 16px;
+  color: #212121;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 14px;
+  cursor: text;
+  top: 20px;
+}
+
+label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #9b9b9b;
+}
+
+.form__field:focus ~ .form__label {
+  color: #009788;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #009788;
+}
+/* .user_input{
+ display: flex;
+ justify-content: space-between;
+
+} */
+.user_input{
+    padding: 30px;
+    margin: 20px;
+    
+
+}
+.chackBox{
+    padding: 20px;
+    margin-top: 40px;
+ margin-right: 10px;
+ 
+}
+.btn{
+    background-color: blue;
+    /* outline: none; */
+    color: white !important;
+    border-radius: 10px;
+    float: left;
+    padding: 10px;
+    margin-left: 90%;
+    margin-bottom: 20px;
+    
+   
+   
+
+}
+#c1{
+    /* background-color: blue !important; */
+    background: linear-gradient(45deg, #3498db, #2980b9);
+}
+a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    /* Styles specific to screens with a maximum width of 600px or smaller */
+
+    .shipping-details {
+        width: 100%;
+        margin: 10px;
+       
+    }
+
+    .nav {
+        padding: 15px;
+        color: white;
+        background-color: #333;
+        text-align: center;
+       
+    }
+
+    .Checkout {
+        margin: 15px;
+    }
+
+    .circle {
+        /* height: 20px;
+        width: 20px;
+        font-size: 12px;
+        padding: 3px; */
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        /* background: linear-gradient(45deg, #3498db, #2980b9); */
+        font-size: 1.2em;
+        background-color: grey;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: background 0.3s ease-in-out;
+    }
+
+    .address_details {
+        flex-direction: row; /* Switch to row direction for smaller screens */
+        align-items: center;
+        justify-content: space-around;
+       
+    }
+
+    .user_input {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .form__field {
+        font-size: 14px;
+    }
+
+    .form__label {
+        font-size: 12px;
+    }
+
+    .chackBox {
+        padding: 10px;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .btn {
+        margin-left: 85%;
+        margin-bottom: 10px;
+        padding: 8px;
+        background-color: #3498db;
+    }
+}

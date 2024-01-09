@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="product-delivery">
+        <div class="nav">
+            <h1>Diatoz & E2E Hiring</h1>
+        </div>
+        <div class="shipping-details">
+            <h1 class="Checkout">Checkout</h1>
+            <div class="address_details">
+                <div class="circle" id="c1">
+
+                    1
+                </div>
+                <h4>Shipping address</h4>
+                <div class="circle">
+                    2
+
+                </div>
+                <h4>Payment details</h4>
+                <div class="circle">
+                    3
+
+                </div>
+                <h4>Review your order</h4>
+            </div>
+            <div class="user_input">
+                <h3>Shipping address
+                </h3>
+                <div class="form__group">
+                    <div style="display: flex; column-gap: 20px; justify-content: space-between; " >
+                        <div>
+                            <input type="email"  class="form__field" placeholder="Email" id="first-name">
+                            <label for="email" class="form__label">First Name</label>
+
+                        </div>
+                        <div>
+                            <input type="email"  class="form__field" placeholder="Email" id="last-name">
+                            <label for="email" class="form__label">Last Name</label>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="form__group">
+                    <input type="email"  class="form__field" placeholder="Your Email" id="address-line1">
+                    <label for="email" class="form__label">Adress Line 1</label>
+                  </div>
+                  <div class="form__group">
+                    <input type="email"  class="form__field" placeholder="Your Email" id="address-line2">
+                    <label for="email" class="form__label">Adress Line 2</label>
+                  </div>
+                  <div class="form__group">
+                    <div style="display: flex; column-gap: 20px; justify-content: space-between; " >
+                        <div>
+                            <input type="email" class="form__field" placeholder="Email" id="city">
+                            <label for="email" class="form__label">City</label>
+
+                        </div>
+                        <div>
+                            <input type="email"  class="form__field" placeholder="Email" id="state">
+                            <label for="email" class="form__label">State/Region</label>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="form__group">
+                    <div style="display: flex; column-gap: 20px; justify-content: space-between; " >
+                        <div>
+                            <input type="email"  class="form__field" placeholder="Email" id="pincode">
+                            <label for="email" class="form__label">Postal Code</label>
+
+                        </div>
+                        <div>
+                            <input type="email"  class="form__field" placeholder="Email" id="country">
+                            <label for="email" class="form__label">Country</label>
+
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div>
+                <input type="checkbox" class="chackBox">Use this address for payment details
+            </div>
+            <button class="btn"  onclick="validateForm()">Next
+                <!-- <a href="Payment.html">Next</a> -->
+            </button>
+            </div>
+           
+        </div>
+
+        <script>
+            function validateForm() {
+    
+     var firstName = document.getElementById('first-name').value.trim();
+    var lastName = document.getElementById('last-name').value.trim();
+    var addressLine1 = document.getElementById('address-line1').value.trim();
+    var country = document.getElementById('country').value.trim();
+    var pincode = document.getElementById('pincode').value.trim();
+
+    if (firstName === '' || lastName === '' || addressLine1 === '' || country === '' || pincode === '') {
+        alert('Please fill in all the required fields');
+    } else {
+       
+        window.location.href = "Payment.html";
+    }
+}
+
+        </script>
+  
+</body>
+
+</html>
